@@ -1,0 +1,21 @@
+
+<div class="normal" *ngIf="type === CONTENT_TYPE.TEXT">- {{title}}</div>
+
+<div class="normal" *ngIf="type === CONTENT_TYPE.BLANK"><br/></div>
+
+<a *ngIf="type === CONTENT_TYPE.LINK" [href]="data" target="_blank"><div class="normal">- {{title}}</div></a>
+
+<a *ngIf="type === CONTENT_TYPE.FILE" [href]="data"><div class="normal">- {{title}}</div></a>
+
+<div *ngIf="type === CONTENT_TYPE.VIDEO" style="margin-right: 10px;width: 270px; display: inline-block;">
+  <div class="normal">- {{title}}</div>
+  <iframe  id="player" [src]="videourl"
+    frameborder="0"
+    allowfullscreen
+    style="width: 225px;height: 145px;"></iframe>
+</div>
+
+<div class="normal assignment" *ngIf="type === CONTENT_TYPE.ASSIGNMENT">- {{title}}</div>
+
+
+<!-- #CD6155 -->

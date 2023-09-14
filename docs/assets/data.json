@@ -1,0 +1,353 @@
+[
+  {
+    "weeknumber": "01",
+    "title": "Introduction à Angular",
+    "content": [
+      {"text":"Utilisation de NPM","contype":"text"},
+      {"text":"TypeScript","contype":"text"},
+      {"text":"Introdution à Angular","contype":"text"},
+      {"text":"Créer une application Angular","contype":"text"},
+      {"text":"Créer un template et l'ajouter dans à un composant Angular","contype":"text"},
+      {"text":"Créer et utiliser un formulaire","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine1.pptx", "title":"PowerPoint - Semaine 1", "doctype":"link"},
+      {"data":"https://www.typescriptlang.org/docs/handbook/typescript-tooling-in-5-minutes.html", "title":"Tutoriel TypeScript", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/npm", "title":"Exemple - npm", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/tsc", "title":"Exemple - TypeScript", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/Templates.depart", "title":"Exercice - Templates - Départ", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/Templates.solution", "title":"Exercice - Templates - Solution", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/https://github.com/CEM-420-4W6/Semaine1.laboratoire", "title":"Laboratoire - Solution", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"16XngEZ7Phg", "title":"Créer son premier projet avec Angular", "doctype":"video"},
+      {"data":"stULeYPnry8", "title":"Manipulations de base avec npm", "doctype":"video"},
+      {"data":"mnrBdzHo5Jc", "title":"Débuter avec Angular", "doctype":"video"},
+      {"data":"CRnas7Dz28Y", "title":"Utiliser VS Code et les breakpoints avec Angular", "doctype":"video"},
+      {"data":"3MD6MXqBCm4", "title":"Utiliser des formulaires avec Angular", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"", "title":"Finir les exercices", "doctype":"text"},
+      {"data":"", "title":"Compléter le laboratoire", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine1",
+    "exercices": "https://jmnadeau.github.io/slidemaker/#/4W6/exercices1"
+  },
+  {
+    "weeknumber": "02",
+    "title": "Services Web et requêtes http",
+    "content": [
+      {"text":"Introduction aux services webs","contype":"text"},
+      {"text":"Utiliser un service web existant","contype":"text"},
+      {"text":"Ajouter async à une méthode","contype":"text"},
+      {"text":"Utiliser await avec les requêtes HTTP","contype":"text"},
+      {"text":"Lire des données au format JSON","contype":"text"},
+      {"text":"Exporter une classe","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine2.pptx", "title":"PowerPoint - Semaine 2 - Merci Maxime! 🥰", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/NullSafety", "title":"Exemple - Null Safety", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/async-await", "title":"Exemple - Async - Await", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/Templates.solution", "title":"Exercice - Http - Solution", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"nEn0BFUmWcQ", "title":"Faire une requête HTTP avec Angular", "doctype":"video"},
+      {"data":"FsFj7LPk1vY", "title":"Utiliser async et await pour des requêtes HTTP", "doctype":"video"},
+      {"data":"Rt_pPKdnk-M", "title":"Démo - Travail pratique 1", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP1 - Super Musique Infinie.docx", "title":"Super Musique Infinie", "doctype":"link"},
+      {"data":"", "title":"Travail personnel 1", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine2",
+    "exercices": "https://jmnadeau.github.io/slidemaker/#/4W6/exercices2"
+  },
+  {
+    "weeknumber": "03",
+    "title": "Utiliser plusieurs composants, navigation et Spotify",
+    "content": [
+      {"text":"Le TP1 devrait être complétée","contype":"assignment"},
+      {"text":"Null-Safety, travailler avec les valeurs null et undefined","contype":"text"},
+      {"text":"Découper son code en plusieurs composants","contype":"text"},
+      {"text":"Material Design","contype":"text"},
+      {"text":"Routage -> Changer l'URL, rediriger et récupérer les paramètres","contype":"text"},
+      {"text":"Utiliser un token pour gérer l'authentification","contype":"text"},
+      {"text":"Passer à Spotify API","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine3.pptx", "title":"PowerPoint - Semaine 3 - Merci Maxime! 🥰 🐈", "doctype":"link"},
+      {"data":"https://github.com/CEM-420-4W6/Spotify", "title":"Exemple - Spotify", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"zD5xMHWPD0E", "title":"Créer et utiliser plusieurs components", "doctype":"video"},
+      {"data":"BzAVmmb8Y6Y", "title":"Ajouter Material à un projet", "doctype":"video"},
+      {"data":"uyVjojyu_3M", "title":"Configurer le routage", "doctype":"video"},
+      {"data":"jrbTiZ0nsDQ", "title":"Faire une redirection à partir du code", "doctype":"video"},
+      {"data":"lC7ar6tAYB4", "title":"Démo - TP2 - Version finale", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP2 - Super Musique Infinie.docx", "title":"TP2 - Super Musique Infinie", "doctype":"link"},
+      {"data":"", "title":"Débuter le TP2", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine3",
+    "exercices": "https://jmnadeau.github.io/slidemaker/#/4W6/exercices3"
+  },
+  {
+    "weeknumber": "04",
+    "title": "Organisation efficace du code, stockage client et i18n",
+    "content": [
+      {"text":"Utiliser un service entre différents composants","contype":"text"},
+      {"text":"Organiser les requêtes HTTP et le code avec des services","contype":"text"},
+      {"text":"Utiliser le localStorage pour stocker des informations sur le client","contype":"text"},
+      {"text":"Internationalisation (i18n) avec NGX-Translate","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine4.pptx", "title":"PowerPoint - Semaine 4 - Merci Maxime! 🥰 🐈 👾", "doctype":"link"},
+      {"data":"https://github.com/jmnadeau/4W6-exercices", "title":"Fichiers de départs et solutions des exercices", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"5yG71C8Cgv4", "title":"Créer un service pour partager des données", "doctype":"video"},
+      {"data":"tRwveiHOhSs", "title":"Organisation du code pour les requêtes HTTP", "doctype":"video"},
+      {"data":"U80kf5QeAF8", "title":"Utiliser le localStorage pour persister des données sur le client", "doctype":"video"},
+      {"data":"16Jjm-LDjq0", "title":"Utiliser NGX-Translate pour faire la traduction de l'application", "doctype":"video"},
+      {"data":"lC7ar6tAYB4", "title":"Démo - TP2 - Version finale", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP2 - Super Musique Infinie.docx", "title":"TP2 - Super Musique Infinie", "doctype":"link"},
+      {"data":"", "title":"Poursuivre le TP2", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine4"
+  },
+  {
+    "weeknumber": "05",
+    "title": "Utiliser des vidéos Youtube et Google Maps",
+    "content": [
+      {"text":"Ajouter une vidéo Youtube à project","contype":"text"},
+      {"text":"Utiliser les Pipes pour transformer des données","contype":"text"},
+      {"text":"Ajouter Angular Google Maps pour créer des maps","contype":"text"},
+      {"text":"Affichage et format des dates","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine5.pptx", "title":"PowerPoint - Semaine 5 - Merci Maxime! 🥰 🐈 👾 🕺 ", "doctype":"link"},
+      {"data":"https://github.com/jmnadeau/4W6-exercices", "title":"Fichiers de départs, solutions des exercices et exemples", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"Yv5saunLRdQ", "title":"Ajouter une vidéo Youtube", "doctype":"video"},
+      {"data":"5zibrXPzXW4", "title":"Utiliser un pipe pour filtrer un url", "doctype":"video"},
+      {"data":"lC7ar6tAYB4", "title":"Démo - TP2 - Version finale", "doctype":"video"}
+
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP2 - Super Musique Infinie.docx", "title":"TP2 - Super Musique Infinie", "doctype":"link"},
+      {"data":"", "title":"Poursuivre le TP2", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine5",
+    "exercices": "https://jmnadeau.github.io/slidemaker/#/4W6/exercices5"
+  },
+  {
+    "weeknumber": "06",
+    "title": "Utilisation des modules",
+    "content": [
+      {"text":"Ajouter un module externe","contype":"text"},
+      {"text":"Material Design","contype":"text"},
+      {"text":"Créer son propre module","contype":"text"},
+      {"text":"Remise du travail personnel", "contype":"assignment"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine6.pptx", "title":"PowerPoint - Semaine 6 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 ", "doctype":"link"},
+      {"data":"https://github.com/jmnadeau/4W6-exercices", "title":"Fichiers de départs, solutions des exercices et exemples", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"1hKOpBU9mMc", "title":"Créer son propre module", "doctype":"video"},
+      {"data":"BzAVmmb8Y6Y", "title":"Ajouter Material à un projet", "doctype":"video"},
+      {"data":"TfRrEOsGNv4", "title":"Créer routing module", "doctype":"video"},
+      {"data":"lC7ar6tAYB4", "title":"Démo - TP2 - Version finale", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP2 - Super Musique Infinie.docx", "title":"TP2 - Super Musique Infinie", "doctype":"link"},
+      {"data":"", "title":"Terminer le TP2", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine6",
+    "exercices": "https://jmnadeau.github.io/slidemaker/#/4W6/exercices6"
+  },
+  {
+    "weeknumber": "07",
+    "title": "Examen 1",
+    "content": [
+      {"text":"Examen formatif","contype":"text"},
+      {"text":"Examen 1", "contype":"assignment"},
+      {"text":"Fait individuellement","contype":"text"},
+      {"text":"Tous documents permis","contype":"text"}
+    ],
+    "documents": [
+      {"data":"", "title":"Tous documents permis lors de l'examen", "doctype":"text"}
+    ],
+    "videos": [
+      {"data":"", "title":"Aucune vidéo disponible", "doctype":"text"}
+    ],
+    "homework": [
+      {"data":"", "title":"Compléter l'examen durant la période", "doctype":"text"},
+      {"data":"", "title":"Profiter du congé!", "doctype":"text"}
+    ]
+  },
+  {
+    "weeknumber": "08",
+    "title": "Créer son API en .Net Core et le lier à une application Angular",
+    "content": [
+      {"text":"Créer un API de base avec Web API","contype":"text"},
+      {"text":"Faire des requêtes à notre API","contype":"text"},
+      {"text":"Scaffolding (génération automatique) de contrôleur, contexte et dépendances Nuget","contype":"text"},
+      {"text":"Ajouter CORS à un projet Web API","contype":"text"},
+      {"text":"Modifier les routes des actions et des contrôleurs","contype":"text"},
+      {"text":"Techniques de débogage et problèmes courants","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine8.pptx", "title":"PowerPoint - Semaine 8 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 ", "doctype":"link"},
+      {"data":"./assets/Semaine 8/Exercice - Solution.zip", "title":"Solution de l'exercice", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"},
+      {"data":"z4Kstux95ew", "title":"Créer son premier projet Web API et modifier les routes", "doctype":"video"},
+      {"data":"BmCunNNZ9vQ", "title":"Utiliser Angular avec Web API et gérer des problèmes de CORS", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP3 - Jmepromeneavecmesvalises.com.docx", "title":"TP3 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+      {"data":"", "title":"Débuter le TP3", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine8",
+    "exercices": "https://jmnadeau.github.io/slidemaker/#/4W6/exercices8"
+  },
+  {
+    "weeknumber": "09",
+    "title": "Gestion des utilisateurs avec Identity en .Net Core Web API",
+    "content": [
+      {"text":"Ajouter Identity à un projet Web API","contype":"text"},
+      {"text":"Enregistrer un nouvel utilisateur","contype":"text"},
+      {"text":"Créer un Token pour gérer les connexions","contype":"text"},
+      {"text":"Récupérer et gérer un Token d'authentification","contype":"text"},
+      {"text":"Ajouter un Token à des requêtes Angular","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine9.pptx", "title":"Présentation - Semaine 9 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 ", "doctype":"link"},
+      {"data":"./assets/Semaine 9/DemoAPI - 1 de 3.zip", "title":"Exemple - Identity 1 de 3 - API avec l'enregistrement d'un utilisateur", "doctype":"link"},
+      {"data":"./assets/Semaine 9/DemoAPI - 2 de 3.zip", "title":"Exemple - Identity 2 de 3 - API avec l'enregistrement et la connexion d'un utilisateur", "doctype":"link"},
+      {"data":"./assets/Semaine 9/DemoAPI - 3 de 3.zip", "title":"Exemple - Identity 3 de 3 - API complet et utilisation de l'authenfication de Web API avec Angular", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"},
+      {"data":"08UfXZOauNc", "title":"Ajouter Identity et créer un utilisateur", "doctype":"video"},
+      {"data":"H40aN8l7neg", "title":"Ajouter un token et connecter un utilisateur", "doctype":"video"},
+      {"data":"8sxwMClqtuc", "title":"Utiliser Angular et l'authentification de Web API", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP3 - Jmepromeneavecmesvalises.com.docx", "title":"TP3 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+      {"data":"", "title":"Poursuivre le TP3", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine9"
+  },
+  {
+    "weeknumber": "10",
+    "title": "Gérer les droits d'accès, interceptor et seed de BD",
+    "content": [
+      {"text":"Sécuriser un contrôleur","contype":"text"},
+      {"text":"Sécuriser l'accès aux données","contype":"text"},
+      {"text":"Créer un interceptor","contype":"text"},
+      {"text":"Modifier l'entête HTTP dans un interceptor","contype":"text"},
+      {"text":"Ajouter des données par défaut à la BD","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine10.pptx", "title":"Présentation - Semaine 10 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 🤖 ", "doctype":"link"},
+      {"data":"./assets/Semaine 10/Demo - Spotify - Depart.zip", "title":"Fichiers de départ pour les démos", "doctype":"link"},
+      {"data":"./assets/Semaine 10/Demo - Finale - Interceptor.zip", "title":"Version finale de la démo pour l'Interceptor", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"},
+      {"data":"HJxxkiKRWK8", "title":"Utilser un Intepceptor pour ajouter un token automatiquement", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP3 - Jmepromeneavecmesvalises.com.docx", "title":"TP3 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+      {"data":"", "title":"Terminer le TP3", "doctype":"text"}
+    ],
+    "presentation": "https://jmnadeau.github.io/slidemaker/#/4W6/semaine10"
+  },
+  {
+    "weeknumber": "11",
+    "title": "Créer un serveur d'images avec Web API en .net core",
+    "content": [
+      {"text":"Remise du TP3", "contype":"assignment"},
+      {"text":"Télécharger des images (Download)","contype":"text"},
+      {"text":"Téléverser des images (Upload)","contype":"text"},
+      {"text":"Fournir plusieurs tailles d'images différentes","contype":"text"},
+      {"text":"Lire le metadata des images","contype":"text"}
+    ],
+    "documents": [
+      {"data":"./assets/pptx/4204W6_semaine11.pptx", "title":"Présentation - Semaine 11 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 🤖 🧐 ", "doctype":"link"},
+      {"data":"./assets/Semaine 11/Semaine 11 - Traitement images.pptx", "title":"PowerPoint - Semaine 11", "doctype":"link"},
+      {"data":"./assets/Semaine 11/Demo - Serveur images.zip", "title":"Version finale de la démo", "doctype":"link"}
+    ],
+    "videos": [
+      {"data":"N6VpVvVUHwY", "title":"Créer un serveur d'images", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP4 - Jmepromeneavecmesvalises.com.docx", "title":"TP4 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+      {"data":"", "title":"Débuter le TP4", "doctype":"text"}
+    ]
+  },
+  {
+    "weeknumber": "12",
+    "title": "Inclure des libraire JS à Angular",
+    "content": [
+      {"text":"Ajouter une libraire JS","contype":"text"},
+      {"text":"Utiliser des ViewChild et ViewChildren pour contrôler l'affichage","contype":"text"}
+    ],
+    "documents": [
+      {"data":"https://jmnadeau.github.io/4W6-JS-lib/", "title":"Inclure des fichiers JS avec exemples -> Sur Github", "doctype":"link"},
+      {"data":"./assets/pptx/4204W6_semaine12.pptx", "title":"Présentation - Semaine 12 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 🤖 🧐 🙈 ", "doctype":"link"}
+    ],
+    "presentation": "https://jmnadeau.github.io/4W6-JS-lib/",
+    "videos": [
+      {"data":"", "title":"Aucune vidéo disponible", "doctype":"text"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP4 - Jmepromeneavecmesvalises.com.docx", "title":"TP4 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+      {"data":"", "title":"Poursuivre le TP4", "doctype":"text"}
+    ]
+  },
+  {
+    "weeknumber": "13",
+    "title": "Intégration et révision",
+    "content": [
+      {"text":"Se préparer pour l'examen", "contype":"assignment"}
+    ],
+    "documents": [
+      {"data":"", "title":"Aucun document", "doctype":"text"}
+    ],
+    "videos": [
+      {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"}
+    ],
+    "homework": [
+      {"data":"./assets/TP/TP4 - Jmepromeneavecmesvalises.com.docx", "title":"TP4 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+      {"data":"", "title":"Poursuivre le TP4", "doctype":"text"}
+    ]
+  },
+  {
+    "weeknumber": "14",
+    "title": "Examen 2",
+    "content": [
+      {"text":"Examen 2", "contype":"assignment"},
+      {"text":"Fait individuellement","contype":"text"},
+      {"text":"Tous documents permis","contype":"text"},
+      {"text":"Remise du TP4", "contype":"assignment"}
+    ],
+    "documents": [
+      {"data":"", "title":"Tous documents permis", "doctype":"text"}
+    ],
+    "videos": [
+      {"data":"", "title":"Aucune vidéo disponible", "doctype":"text"}
+    ],
+    "homework": [
+      {"data":"", "title":"Compléter l'examen durant la période", "doctype":"text"},
+      {"data":"", "title":"Profiter du congé!", "doctype":"text"}
+    ]
+  }
+  ]

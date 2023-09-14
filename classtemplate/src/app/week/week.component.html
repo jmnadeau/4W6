@@ -1,0 +1,510 @@
+<div [class]="bg" style="padding: 50px;" *ngIf="!isMobile()" (window:resize)="isMobile()">
+
+  <div style="height: 100px;" *ngIf="style === WEEK_STYLE.RIGHT"></div>
+
+  <div class="container-fluid" [class.translucid]="!fullPresentation && !fullExercices" style="background-color: #111;">
+    <div class="row">
+      <div class="col-md vertical-center" *ngIf="style === WEEK_STYLE.LEFT">
+        <span class="title" style="font-size: 100px;">{{content!.weeknumber}}</span>
+      </div>
+      <div class="col-md-10 weekcontainer">
+        <div class="row bot-padding">
+
+          <div class="col-md center padding-top">
+            <span class="title">{{content!.title}}</span>
+          </div>
+
+        </div>
+        <div class="row bot-padding">
+
+          <div class="col-md-3 left vertical-center">
+            <span class="title small">Contenu </span>
+          </div>
+          <div class="col-md-9">
+            <div style="width: 100%;">
+              <app-content *ngFor="let c of content!.content" [type]="c.contype" [title]="c.text"></app-content>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bot-padding">
+
+          <div class="col-md-3">
+            <div class="title small">Documents </div>
+          </div>
+          <div class="col-md-9">
+            <div style="width: 100%;">
+              <app-content *ngFor="let docs of content!.documents"
+                [type]="docs.doctype"
+                [title]="docs.title"
+                [data]="docs.data">
+              </app-content>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bot-padding" *ngIf="contentAsPresentation(content)">
+
+          <div class="col-md-3">
+            <div class="title small">Présentation</div>
+          </div>
+          <div class="col-md-9">
+
+            <mat-accordion>
+              <mat-expansion-panel (opened)="showPresentation = true"
+                                   (closed)="showPresentation = false"
+                                   style="background-color: #111">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <span class="normal">
+                      Voir le diaporama
+                    </span>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+
+              </mat-expansion-panel>
+            </mat-accordion>
+
+          </div>
+
+        </div>
+        <div
+          class="row bot-padding"
+          style="height:600px; position: relative;"
+          *ngIf="showPresentation"
+          [class.fullScreen]="fullPresentation">
+
+          <button mat-raised-button style="
+            position: absolute;
+            top: 10px;
+            right: 10px;"
+            *ngIf="!fullPresentation"
+            (click)="fullPresentation = !fullPresentation">
+            <mat-icon>open_in_full</mat-icon>
+            Plein écran
+          </button>
+          <button mat-raised-button style="
+            position: absolute;
+            top: 10px;
+            right: 10px;"
+            *ngIf="fullPresentation"
+            (click)="fullPresentation = !fullPresentation">
+            <mat-icon>close_fullscreen</mat-icon>
+            Fermer
+          </button>
+          <iframe width="100%" height="100%" frameBorder="0" [src]="safe(content!.presentation)"></iframe>
+
+        </div>
+
+
+        <div class="row bot-padding">
+
+          <div class="col-md-3">
+            <div class="title small">Vidéos </div>
+          </div>
+          <div class="col-md-9">
+
+            <mat-accordion *ngIf="contentAsVideos(content)">
+              <mat-expansion-panel (opened)="panelOpenState = true"
+                                   (closed)="panelOpenState = false"
+                                   style="background-color: #111">
+                <mat-expansion-panel-header [collapsedHeight]="(content!.videos.length*2)+'em'">
+                  <mat-panel-title>
+                    <span class="normal">
+                      Voir les vidéos
+                    </span>
+                  </mat-panel-title>
+                  <div *ngIf="!panelOpenState" style="padding-right: 22px;">
+                    <div *ngFor="let docs of content!.videos">
+                      {{docs.title}}
+                    </div>
+                  </div>
+                </mat-expansion-panel-header>
+
+                <div style="width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end;" *ngIf="panelOpenState">
+                  <app-content *ngFor="let docs of content!.videos"
+                    [type]="docs.doctype"
+                    [title]="docs.title"
+                    [data]="docs.data">
+                  </app-content>
+                </div>
+              </mat-expansion-panel>
+            </mat-accordion>
+
+            <div style="width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end;"  *ngIf="!contentAsVideos(content)">
+              <app-content *ngFor="let docs of content!.videos"
+                [type]="docs.doctype"
+                [title]="docs.title"
+                [data]="docs.data">
+              </app-content>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bot-padding">
+
+          <div class="col-md-3">
+            <div class="title small">Travail </div>
+          </div>
+          <div class="col-md-9">
+            <div style="width: 100%;">
+              <app-content *ngFor="let docs of content!.homework"
+                [type]="docs.doctype"
+                [title]="docs.title"
+                [data]="docs.data">
+              </app-content>
+            </div>
+          </div>
+
+        </div>
+
+        <div class="row bot-padding" *ngIf="contentAsExercices(content)">
+
+          <div class="col-md-3">
+            <div class="title small">Exercices</div>
+          </div>
+          <div class="col-md-9">
+
+            <mat-accordion>
+              <mat-expansion-panel (opened)="showExercices = true"
+                                   (closed)="showExercices = false"
+                                   style="background-color: #111">
+                <mat-expansion-panel-header>
+                  <mat-panel-title>
+                    <span class="normal">
+                      Voir les exercices
+                    </span>
+                  </mat-panel-title>
+                </mat-expansion-panel-header>
+
+              </mat-expansion-panel>
+            </mat-accordion>
+
+          </div>
+
+        </div>
+        <div
+          class="row bot-padding"
+          style="height:600px; position: relative;"
+          *ngIf="showExercices"
+          [class.fullScreen]="fullExercices">
+
+          <button mat-raised-button style="
+            position: absolute;
+            top: 10px;
+            right: 10px;"
+            *ngIf="!fullExercices"
+            (click)="fullExercices = !fullExercices">
+            <mat-icon>open_in_full</mat-icon>
+            Plein écran
+          </button>
+          <button mat-raised-button style="
+            position: absolute;
+            top: 10px;
+            right: 10px;"
+            *ngIf="fullExercices"
+            (click)="fullExercices = !fullExercices">
+            <mat-icon>close_fullscreen</mat-icon>
+            Fermer
+          </button>
+          <iframe width="100%" height="100%" frameBorder="0" [src]="safe(content!.exercices)"></iframe>
+
+        </div>
+
+      </div>
+      <div class="col-md vertical-center" *ngIf="style === WEEK_STYLE.RIGHT">
+        <span class="title" style="font-size: 100px;">{{content!.weeknumber}}</span>
+      </div>
+    </div>
+  </div>
+
+  <!--mat-grid-list-- cols="5"
+    rowHeight="fit"
+    *ngIf="style === WEEK_STYLE.LEFT"
+    gutterSize=2
+    style="background-color: #111; opacity: 0.95; height: 600px;">
+    <mat-grid-tile [colspan]="1" [rowspan]="6">
+      <span class="title" style="font-size: 100px;">{{content!.weeknumber}}</span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+      <span class="title">{{content!.title}}</span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <div class="title small">Contenu </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <div style="width: 100%;">
+        <app-content *ngFor="let c of content!.content" [type]="c.contype" [title]="c.text"></app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="">
+      <span class="title small">Documents </span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.documents"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <span class="title small">Vidéos </span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="2">
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.videos"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <span class="title small">Travail à faire</span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="2">
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.homework"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+  </!--mat-grid-list-->
+
+
+  <!--mat-grid-list cols="5"
+    rowHeight="fit"
+    *ngIf="style === WEEK_STYLE.RIGHT"
+    gutterSize=2
+    style="background-color: #111; opacity: 0.95; height: 600px;">
+    <mat-grid-tile [colspan]="4" [rowspan]="1">
+      <span class="title">{{content!.title}}</span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="6">
+      <span class="title" style="font-size: 100px;">{{content!.weeknumber}}</span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <div class="title small">Contenu </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <div style="width: 100%;">
+        <app-content *ngFor="let c of content!.content" [type]="c.contype" [title]="c.text"></app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <span class="title small">Documents </span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.documents"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="2">
+      <span class="title small">Vidéos </span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="2">
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.videos"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="1" [rowspan]="1">
+      <span class="title small">Travail à faire</span>
+    </mat-grid-tile>
+    <mat-grid-tile [colspan]="3" [rowspan]="1">
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.homework"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+  </!--mat-grid-list-->
+
+  <div style="height: 100px;" *ngIf="style === WEEK_STYLE.RIGHT"></div>
+
+</div>
+
+<div class="{{style === WEEK_STYLE.RIGHT?'':bg}}" style="padding: 20px;" *ngIf="isMobile()" (window:resize)="isMobile()">
+
+  <div style="height: 100px;" *ngIf="style === WEEK_STYLE.RIGHT"></div>
+
+  <div style="background-color: #111; opacity: 0.95;">
+    <div >
+      <span class="title big">{{content!.weeknumber}}</span>
+    </div>
+    <div>
+      <span class="title">{{content!.title}}</span>
+    </div>
+    <div>
+      <div class="title small">Contenu </div>
+    </div>
+    <div>
+      <div style="width: 100%;padding: 18px;">
+        <app-content *ngFor="let c of content!.content" [type]="c.contype" [title]="c.text"></app-content>
+      </div>
+    </div>
+    <div>
+      <span class="title small">Documents </span>
+    </div>
+    <div>
+      <div style="width: 100%;padding: 18px;">
+        <app-content *ngFor="let docs of content!.documents"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </div>
+
+    <!-- ======== Présentation ========= -->
+    <div *ngIf="contentAsPresentation(content)">
+      <div>
+        <span class="title small">Présentation </span>
+      </div>
+      <div>
+        <div style="width: 100%;padding: 18px;">
+          <app-content
+            [type]="CONTENT_TYPE.LINK"
+            [title]="'Ouvrir le diaporama'"
+            [data]="content!.presentation">
+          </app-content>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <span class="title small">Vidéos </span>
+    </div>
+    <div>
+      <mat-accordion *ngIf="contentAsVideos(content)">
+        <mat-expansion-panel (opened)="panelOpenState = true"
+                             (closed)="panelOpenState = false"
+                             style="background-color: #111">
+          <mat-expansion-panel-header [collapsedHeight]="(content!.videos.length*2)+'em'">
+            <mat-panel-title>
+              <span class="normal">
+                Voir les vidéos
+              </span>
+            </mat-panel-title>
+            <div *ngIf="!panelOpenState" style="padding-right: 22px;">
+              <div *ngFor="let docs of content!.videos">
+                {{docs.title}}
+              </div>
+            </div>
+          </mat-expansion-panel-header>
+          <div style="width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end;" *ngIf="panelOpenState">
+            <app-content *ngFor="let docs of content!.videos"
+              [type]="docs.doctype"
+              [title]="docs.title"
+              [data]="docs.data">
+            </app-content>
+          </div>
+        </mat-expansion-panel>
+      </mat-accordion>
+
+      <div style="width: 100%; display: flex; flex-wrap: wrap; align-items: flex-end;"  *ngIf="!contentAsVideos(content)">
+        <app-content *ngFor="let docs of content!.videos"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+      <!-- <div style="width: 100%;padding: 18px; display: flex; flex-wrap: wrap;">
+        <app-content *ngFor="let docs of content!.videos"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div> -->
+    </div>
+    <div>
+      <span class="title small">Travail </span>
+    </div>
+    <div>
+      <div style="width: 100%;padding: 18px;">
+        <app-content *ngFor="let docs of content!.homework"
+          [type]="docs.doctype"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </div>
+    <!-- ======== Exercices ========= -->
+    <div *ngIf="contentAsExercices(content)">
+      <div>
+        <span class="title small">Exercices </span>
+      </div>
+      <div>
+        <div style="width: 100%;padding: 18px;">
+          <app-content
+            [type]="CONTENT_TYPE.LINK"
+            [title]="'Ouvrir les exercices'"
+            [data]="content!.exercices">
+          </app-content>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+
+  <!--<mat-grid-list cols="1"
+    *ngIf="style === WEEK_STYLE.LEFT"
+    gutterSize=2
+    style="background-color: #111; opacity: 0.95; height: 400px;">
+    <mat-grid-tile>
+      <span class="title" style="font-size: 100px;">{{content!.weeknumber}}</span>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <span class="title">{{content!.title}}</span>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div class="title small">Contenu </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div style="width: 100%;">
+        <app-content *ngFor="let c of content!.content" [type]="CONTENT_TYPE.TEXT" [title]="c"></app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <span class="title small">Documents </span>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div style="width: 100%;">
+        <app-content *ngFor="let docs of content!.documents"
+          [type]="CONTENT_TYPE.LINK"
+          [title]="docs.title"
+          [data]="docs.data">
+        </app-content>
+      </div>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <span class="title small">Travail à faire</span>
+    </mat-grid-tile>
+    <mat-grid-tile>
+      <div style="width: 100%;">
+        <div class="normal" *ngFor="let hw of content!.homework">- {{hw}}</div>
+      </div>
+    </mat-grid-tile>
+  </mat-grid-list>-->
+
+  <div style="height: 100px;" *ngIf="style === WEEK_STYLE.RIGHT"></div>
+
+</div>
+

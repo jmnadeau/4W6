@@ -1,0 +1,14 @@
+<div [class]="{'container':isMobile(), 'bg-fullnopadding':isMobile(), 'bg-full':!isMobile(), 'bg-parallax':!isMobile(), 'bg-empty-1':!isMobile()}" (window:resize)="isMobile()">
+  <div class="fixed-img" *ngIf="isMobile()"></div>
+  <div class="caption">
+    <span class="title">{{template.title}}</span>
+    <br />
+    <span class="title">{{template.subtitle}}</span>
+  </div>
+</div>
+
+<div *ngFor="let week of template.weeks; let i = index">
+  <app-week [content]="week" [style]="WEEK_STYLE.LEFT" [bg]="'bg-dark'" *ngIf="i%2===0"></app-week>
+  <app-week [content]="week" [style]="WEEK_STYLE.RIGHT" [bg]="'bg-empty-3 bg-full bg-parallax'" *ngIf="i%4===1"></app-week>
+  <app-week [content]="week" [style]="WEEK_STYLE.RIGHT" [bg]="'bg-empty-1 bg-full bg-parallax'" *ngIf="i%4===3"></app-week>
+</div>

@@ -1,0 +1,19 @@
+.fullScreen {
+  width: 100vw !important;
+  height: 100vh !important;
+  position: fixed !important;
+  top: 0 !important;
+  left: 0 !important;
+  right: 0 !important;
+  margin: 0;
+  padding: 0;
+  z-index: 100;
+}
+
+.weekcontainer {
+  position: relative;
+}
+
+.translucid {
+  opacity: 0.95;
+}
