@@ -20,7 +20,7 @@
         {"data":"https://github.com/CEM-420-4W6/tsc", "title":"Exemple - TypeScript", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/Templates.depart", "title":"Exercice - Templates - Départ", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/Templates.solution", "title":"Exercice - Templates - Solution", "doctype":"link"},
-        {"data":"https://github.com/CEM-420-4W6/https://github.com/CEM-420-4W6/Semaine1.laboratoire", "title":"Laboratoire - Solution", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/Semaine1.laboratoire", "title":"Laboratoire - Solution", "doctype":"link"}
       ],
       "videos": [
         {"data":"16XngEZ7Phg", "title":"Créer son premier projet avec Angular", "doctype":"video"},
@@ -40,6 +40,7 @@
       "weeknumber": "02",
       "title": "Services Web et requêtes http",
       "content": [
+        {"text":"Null-Safety, travailler avec les valeurs null et undefined","contype":"text"},
         {"text":"Introduction aux services webs","contype":"text"},
         {"text":"Utiliser un service web existant","contype":"text"},
         {"text":"Ajouter async à une méthode","contype":"text"},
@@ -51,7 +52,7 @@
         {"data":"./assets/pptx/4204W6_semaine2.pptx", "title":"PowerPoint - Semaine 2 - Merci Maxime! 🥰", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/NullSafety", "title":"Exemple - Null Safety", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/async-await", "title":"Exemple - Async - Await", "doctype":"link"},
-        {"data":"https://github.com/CEM-420-4W6/Templates.solution", "title":"Exercice - Http - Solution", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/http", "title":"Exercice - Http - Solution", "doctype":"link"}
       ],
       "videos": [
         {"data":"nEn0BFUmWcQ", "title":"Faire une requête HTTP avec Angular", "doctype":"video"},
@@ -70,7 +71,6 @@
       "title": "Utiliser plusieurs composants, navigation et Spotify",
       "content": [
         {"text":"Le TP1 devrait être complétée","contype":"assignment"},
-        {"text":"Null-Safety, travailler avec les valeurs null et undefined","contype":"text"},
         {"text":"Découper son code en plusieurs composants","contype":"text"},
         {"text":"Material Design","contype":"text"},
         {"text":"Routage -> Changer l'URL, rediriger et récupérer les paramètres","contype":"text"},
@@ -79,7 +79,11 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine3.pptx", "title":"PowerPoint - Semaine 3 - Merci Maxime! 🥰 🐈", "doctype":"link"},
-        {"data":"https://github.com/CEM-420-4W6/Spotify", "title":"Exemple - Spotify", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/Spotify", "title":"Exemple - Spotify", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/component.depart", "title":"Exercice - Composants - Départ", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/component.solution", "title":"Exercice - Composants - Solution", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/routage.depart", "title":"Exercice - Routage - Départ", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/routage.solution", "title":"Exercice - Routage - Solution", "doctype":"link"}
       ],
       "videos": [
         {"data":"zD5xMHWPD0E", "title":"Créer et utiliser plusieurs components", "doctype":"video"},
@@ -106,7 +110,8 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine4.pptx", "title":"PowerPoint - Semaine 4 - Merci Maxime! 🥰 🐈 👾", "doctype":"link"},
-        {"data":"https://github.com/jmnadeau/4W6-exercices", "title":"Fichiers de départs et solutions des exercices", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/service.depart", "title":"Exercice - Service - Départ", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/service.solution", "title":"Exercice - Service - Solution", "doctype":"link"}
       ],
       "videos": [
         {"data":"5yG71C8Cgv4", "title":"Créer un service pour partager des données", "doctype":"video"},
