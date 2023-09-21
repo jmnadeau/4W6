@@ -137,7 +137,10 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine5.pptx", "title":"PowerPoint - Semaine 5 - Merci Maxime! 🥰 🐈 👾 🕺 ", "doctype":"link"},
-        {"data":"https://github.com/jmnadeau/4W6-exercices", "title":"Fichiers de départs, solutions des exercices et exemples", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/pipe", "title":"Exemple - Pipe", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/maps", "title":"Exemple - Google Maps", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/pipe.depart", "title":"Exercice - Pipe - Départ", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/pipe.solution", "title":"Exercice - Pipe - Solution", "doctype":"link"}
       ],
       "videos": [
         {"data":"Yv5saunLRdQ", "title":"Ajouter une vidéo Youtube", "doctype":"video"},
@@ -163,7 +166,8 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine6.pptx", "title":"PowerPoint - Semaine 6 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 ", "doctype":"link"},
-        {"data":"https://github.com/jmnadeau/4W6-exercices", "title":"Fichiers de départs, solutions des exercices et exemples", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/module.depart", "title":"Exercice - Module - Départ", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/module.solution", "title":"Exercice - Module - Solution", "doctype":"link"}
       ],
       "videos": [
         {"data":"1hKOpBU9mMc", "title":"Créer son propre module", "doctype":"video"},
