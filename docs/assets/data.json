@@ -215,7 +215,8 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine8.pptx", "title":"PowerPoint - Semaine 8 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 ", "doctype":"link"},
-        {"data":"./assets/Semaine 8/Exercice - Solution.zip", "title":"Solution de l'exercice", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/webapi.ng", "title":"Solution de l'exercice - Angular", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/webapi.api", "title":"Solution de l'exercice - Web API", "doctype":"link"}
       ],
       "videos": [
         {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"},
