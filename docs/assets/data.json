@@ -215,7 +215,7 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine8.pptx", "title":"PowerPoint - Semaine 8 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 ", "doctype":"link"},
-        {"data":"https://github.com/CEM-420-4W6/webapi.ng", "title":"Solution de l'exercice - Angular", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/webapi.ng", "title":"Solution de l'exercice - Angular", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/webapi.api", "title":"Solution de l'exercice - Web API", "doctype":"link"}
       ],
       "videos": [
@@ -242,7 +242,7 @@
       ],
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine9.pptx", "title":"Présentation - Semaine 9 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 ", "doctype":"link"},
-        {"data":"./assets/Semaine 9/DemoAPI - 1 de 3.zip", "title":"Exemple - Identity 1 de 3 - API avec l'enregistrement d'un utilisateur", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/identity1de3/", "title":"Exemple - Identity 1 de 3 - API avec l'enregistrement d'un utilisateur", "doctype":"link"},
         {"data":"./assets/Semaine 9/DemoAPI - 2 de 3.zip", "title":"Exemple - Identity 2 de 3 - API avec l'enregistrement et la connexion d'un utilisateur", "doctype":"link"},
         {"data":"./assets/Semaine 9/DemoAPI - 3 de 3.zip", "title":"Exemple - Identity 3 de 3 - API complet et utilisation de l'authenfication de Web API avec Angular", "doctype":"link"}
       ],
