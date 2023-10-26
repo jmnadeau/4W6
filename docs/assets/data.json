@@ -244,8 +244,8 @@
         {"data":"./assets/pptx/4204W6_semaine9.pptx", "title":"Présentation - Semaine 9 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 ", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/identity1de3/", "title":"Exemple - Identity 1 de 3 - API avec l'enregistrement d'un utilisateur", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/identity2de3/", "title":"Exemple - Identity 2 de 3 - API avec l'enregistrement et la connexion d'un utilisateur", "doctype":"link"},
-        {"data":"https://github.com/CEM-420-4W6/identity.token.api/", "title":"Exemple - Identity 3 de 3 - API complet et utilisation de l'authenfication de Web API", "doctype":"link"},
-        {"data":"https://github.com/CEM-420-4W6/identity.token.ng/", "title":"Exemple - Identity 3 de 3 - Client Angular pour l'utilisation de l'authenfication de Web API", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/identity.token.api/", "title":"Exemple - Identity 3 de 3 - Web API  - Utilisation de l'authenfication de Web API et Angular", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/identity.token.ng/", "title":"Exemple - Identity 3 de 3 - Client Angular  - Utilisation de l'authenfication de Web API et Angular", "doctype":"link"}
       ],
       "videos": [
         {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"},
