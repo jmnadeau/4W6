@@ -241,6 +241,10 @@
         {"text":"Ajouter un Token à des requêtes Angular","contype":"text"}
       ],
       "documents": [
+        {"data":"", "title":"Commande pour les certificats HTTPS brisés", "doctype":"text"},
+        {"data":"", "title":"dotnet dev-certs https --clean", "doctype":"text"},
+        {"data":"", "title":"dotnet dev-certs https --trust", "doctype":"text"},
+        {"data":"", "title":"", "doctype":"text"},
         {"data":"./assets/pptx/4204W6_semaine9.pptx", "title":"Présentation - Semaine 9 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 ", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/identity1de3/", "title":"Exemple - Identity 1 de 3 - API avec l'enregistrement d'un utilisateur", "doctype":"link"},
         {"data":"https://github.com/CEM-420-4W6/identity2de3/", "title":"Exemple - Identity 2 de 3 - API avec l'enregistrement et la connexion d'un utilisateur", "doctype":"link"},
@@ -270,9 +274,13 @@
         {"text":"Ajouter des données par défaut à la BD","contype":"text"}
       ],
       "documents": [
+        {"data":"", "title":"Commande pour les certificats HTTPS brisés", "doctype":"text"},
+        {"data":"", "title":"dotnet dev-certs https --clean", "doctype":"text"},
+        {"data":"", "title":"dotnet dev-certs https --trust", "doctype":"text"},
+        {"data":"", "title":"", "doctype":"text"},
         {"data":"./assets/pptx/4204W6_semaine10.pptx", "title":"Présentation - Semaine 10 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 🤖 ", "doctype":"link"},
-        {"data":"./assets/Semaine 10/Demo - Spotify - Depart.zip", "title":"Fichiers de départ pour les démos", "doctype":"link"},
-        {"data":"./assets/Semaine 10/Demo - Finale - Interceptor.zip", "title":"Version finale de la démo pour l'Interceptor", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/Seed", "title":"Exemple de seed et de gestion des droits d'accès", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/Interceptor", "title":"Version finale de la démo pour l'Interceptor", "doctype":"link"}
       ],
       "videos": [
         {"data":"agohtZGh8DA", "title":"Démo - Jmepromeneavecmesvalises.com - TP3 et TP4", "doctype":"video"},
