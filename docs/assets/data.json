@@ -294,6 +294,23 @@
     },
     {
       "weeknumber": "11",
+      "content": [
+        {"text":"Remise du TP3", "contype":"assignment"},
+        {"text":"Faire des service en Web API","contype":"text"}
+      ],
+      "documents": [
+        {"data":"./assets/pptx/services.api.pptx", "title":"Les services en web API", "doctype":"link"}
+      ],
+      "videos": [
+        {"data":"", "title":"Aucune vidéo disponible", "doctype":"text"}
+      ],
+      "homework": [
+        {"data":"./assets/TP/TP3 - Jmepromeneavecmesvalises.com.docx", "title":"TP3 - Jmepromeneavecmesvalises.com", "doctype":"link"},
+        {"data":"", "title":"Débuter le TP4", "doctype":"text"}
+      ]
+    },
+    {
+      "weeknumber": "12",
       "title": "Créer un serveur d'images avec Web API en .net core",
       "content": [
         {"text":"Remise du TP3", "contype":"assignment"},
@@ -316,7 +333,7 @@
       ]
     },
     {
-      "weeknumber": "12",
+      "weeknumber": "13",
       "title": "Inclure des libraire JS à Angular",
       "content": [
         {"text":"Ajouter une libraire JS","contype":"text"},
@@ -336,7 +353,7 @@
       ]
     },
     {
-      "weeknumber": "13",
+      "weeknumber": "14",
       "title": "Intégration et révision",
       "content": [
         {"text":"Se préparer pour l'examen", "contype":"assignment"}
@@ -353,7 +370,7 @@
       ]
     },
     {
-      "weeknumber": "14",
+      "weeknumber": "15",
       "title": "Examen 2",
       "content": [
         {"text":"Examen 2", "contype":"assignment"},
