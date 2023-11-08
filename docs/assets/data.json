@@ -294,6 +294,7 @@
     },
     {
       "weeknumber": "11",
+      "title": "Les services",
       "content": [
         {"text":"Remise du TP3", "contype":"assignment"},
         {"text":"Faire des service en Web API","contype":"text"}
@@ -306,7 +307,7 @@
       ],
       "homework": [
         {"data":"./assets/TP/TP3 - Jmepromeneavecmesvalises.com.docx", "title":"TP3 - Jmepromeneavecmesvalises.com", "doctype":"link"},
-        {"data":"", "title":"Débuter le TP4", "doctype":"text"}
+        {"data":"", "title":"Terminer le TP3", "doctype":"text"}
       ]
     },
     {
