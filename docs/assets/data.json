@@ -323,7 +323,8 @@
       "documents": [
         {"data":"./assets/pptx/4204W6_semaine11.pptx", "title":"Présentation - Semaine 11 - Merci Maxime! 🥰 🐈 👾 🕺 🎉 🛵 😱 🤖 🧐 ", "doctype":"link"},
         {"data":"./assets/Semaine 11/Semaine 11 - Traitement images.pptx", "title":"PowerPoint - Semaine 11", "doctype":"link"},
-        {"data":"./assets/Semaine 11/Demo - Serveur images.zip", "title":"Version finale de la démo", "doctype":"link"}
+        {"data":"https://github.com/CEM-420-4W6/images.ng", "title":"Version finale de la démo - Angular", "doctype":"link"},
+        {"data":"https://github.com/CEM-420-4W6/images.api", "title":"Version finale de la démo - Web API", "doctype":"link"}
       ],
       "videos": [
         {"data":"N6VpVvVUHwY", "title":"Créer un serveur d'images", "doctype":"video"}
